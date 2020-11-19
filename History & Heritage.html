@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ClubComm Test Site</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://finchcoding.com/e3/css/bootstrap_grid.css" />
+<link rel="stylesheet" href="css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="e3wrapper">   
+    <header>
+        <div class="container-fluid">
+        <div class="mobile-nav-btn">
+        <a href="#" id="menu-button" class="collapsed"><i class="fa fa-bars"></i></a></div><div class="logo"><a href="/Home.aspx"><img alt="" src="img/logo-w.png"></a>
+        </div>
+        <div class="MyProfile_Member" id="divCollapsed">
+        <div id="p_lt_Header_MyProfilePages_divSignedIn" class="MyProfile_SignedIn" style="display:none;">
+        <div id="p_lt_Header_MyProfilePages_userInSvgDiv" class="MyProfile_Svg">
+        <svg version="1.1" id="userInSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 608 608" style="enable-background:new 0 0 608 608;" xml:space="preserve">
+        <path d="M304,0C136.3,0,0,136.3,0,304c0,74.2,26.8,142.3,71,195.1l-0.2,2.3l2.6,2.6c1,1,2.8,2.3,5.3,3.8
+        C134.5,569.3,214.8,608,304,608c167.7,0,304-136.3,304-304S471.7,0,304,0z M304,33c149.4,0,271,121.6,271,271
+        c0,58.5-18.7,112.7-50.2,157c-1.3-9.4-3.1-18.5-5.3-24.6c-6.9-19.5-15.5-28.3-26.3-35.5c-5.3-3.5-24.9-10.9-54.2-21.8
+        c-26.6-9.9-56.8-21.1-67.6-27.4c-9.7-5.6-17.3-31.2-17-39.2c0.2-0.3,0.8-2.1,6.6-8.4c11.6-12.6,26.8-36.7,33-60.1
+        c8.6-31.9,15-96.5-14.5-136.3c-16.9-22.6-43-34.7-77.7-35.9h-2.6h-0.8c-34.9,1.2-61,13.2-77.8,35.9C191,147.4,197.6,212,206,243.9
+        c6.3,23.3,21.5,47.4,32.9,60l0.2,0.2c1.7,1.8,5.6,6.1,6.4,8.6c3,8.6-8.1,33.5-17.2,38.8c-10.7,6.1-41,17.3-68.1,27.4
+        c-29.1,10.9-48.6,18.2-53.9,21.8c-10.7,7.1-19.3,15.9-26.3,35.5c-1.5,4-2.6,9.1-3.6,14.7C49.1,408.6,33,358,33,304
+        C33,154.6,154.6,33,304,33z M386.4,549.5C386.4,549.5,386.6,549.5,386.4,549.5h0.2C386.6,549.5,386.6,549.5,386.4,549.5z"/>
+        </svg>
+        </div>
+
+        <span id="p_lt_Header_MyProfilePages_lblMemberName" class="MyProfile_Name"></span>
+        <div class="arrow-down"></div>
+        </div>
+        <div id="p_lt_Header_MyProfilePages_divSignedOut" class="MyProfile_SignedOut" style="display:block;" onclick="location.href='/login.aspx'">
+        <div id="p_lt_Header_MyProfilePages_userOutSvgDiv" class="MyProfile_Svg">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 608 608" style="enable-background:new 0 0 608 608;" xml:space="preserve">
+        <g>
+        <path d="M304,0C136.4,0,0,136.4,0,304s136.4,304,304,304s304-136.4,304-304S471.6,0,304,0z M304,575.3
+        C154.5,575.3,32.8,453.6,32.8,304S154.5,32.8,304,32.8S575.3,154.5,575.3,304C575.3,453.6,453.5,575.3,304,575.3z"/>
+        <polygon points="319.1,357 319.2,356.9 319.2,356.9 	"/>
+        <path d="M252,191.3c11.6-13.5,28.5-20.2,51.6-20.5c35.3,0.4,60.4,8.2,72.4,22.8c11.6,14,8.5,31,8.3,31.8l21.6,4.5l21.5,4.7
+        c0.8-3.8,7.5-38-16.7-68.2c-20.6-25.6-56.1-38.8-105.4-39.6v-0.2c-0.6,0-1.2,0.1-1.9,0.1c-0.8,0-1.6-0.1-2.4-0.1v0.2
+        c-35.1,0.9-62.9,12.9-82.6,35.8c-28.6,33.4-30.8,80.7-29.7,105.5h-32.1v165.2h298.2V268.1H232.9C231.9,250.6,232.5,213.9,252,191.3
+        z M282.8,305.7c5.8-5.8,13.7-9.3,22.5-9.3s16.8,3.6,22.5,9.3c5.8,5.8,9.3,13.7,9.3,22.5c0,6.3-1.8,12.2-5,17.2
+        c-3.1,4.9-7.6,8.9-12.9,11.5v22.5v22.5h-13.9h-13.9v-22.5v-22.5l0.2,0.1c-5.4-2.6-9.9-6.6-13.1-11.6s-5-10.9-5-17.2
+        C273.4,319.4,277,311.5,282.8,305.7z"/>
+        </g>
+        </svg>
+
+        </div>
+        <span id="p_lt_Header_MyProfilePages_lblSignIn" class="MyProfile_Name">Member Login</span>
+        </div> 
+        <div class="fullView" id="divFullView" style="display: none;">
+        <div class="MyProfile_FullMain">
+
+        <a id="p_lt_Header_MyProfilePages_btnSignOutLink" class="MyProfile_FullLink" href="javascript:__doPostBack('p$lt$Header$MyProfilePages$btnSignOutLink','')">Logout</a>
+        </div>
+        </div>
+        </div>
+
+        <link href="/CMSPages/GetCSS.aspx?stylesheetname=SmartMenu.css" rel="stylesheet" type="text/css">
+        <div id="divMainMenu" style="display: block;">
+        <div id="menu-button2">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 95.939 95.939" style="enable-background:new 0 0 95.939 95.939;" xml:space="preserve">
+        <g>
+        <path d="M62.819,47.97l32.533-32.534c0.781-0.781,0.781-2.047,0-2.828L83.333,0.586C82.958,0.211,82.448,0,81.919,0 c-0.53,0-1.039,0.211-1.414,0.586L47.97,33.121L15.435,0.586c-0.75-0.75-2.078-0.75-2.828,0L0.587,12.608 c-0.781,0.781-0.781,2.047,0,2.828L33.121,47.97L0.587,80.504c-0.781,0.781-0.781,2.047,0,2.828l12.02,12.021 c0.375,0.375,0.884,0.586,1.414,0.586c0.53,0,1.039-0.211,1.414-0.586L47.97,62.818l32.535,32.535 c0.375,0.375,0.884,0.586,1.414,0.586c0.529,0,1.039-0.211,1.414-0.586l12.02-12.021c0.781-0.781,0.781-2.048,0-2.828L62.819,47.97 z"/>
+        </g>
+        </svg>
+        </div>
+        <nav>
+            <ul id="main-menu" class="sm sm-blue  collapsed" data-smartmenus-id="14756718904763403">
+                <li><a href="/CountryHome.aspx">Home</a></li>
+                <li><a href="/About.aspx" class="has-submenu current" id="sm-14756718904763403-1" aria-haspopup="true" aria-controls="sm-14756718904763403-2" aria-expanded="false"><span class="sub-arrow fa fa-angle-down"></span>About</a>
+                <ul id="sm-14756718904763403-2" role="group" aria-hidden="true" aria-labelledby="sm-14756718904763403-1" aria-expanded="false">
+                <li><a href="/About/Contact_Us.aspx">Contact Us</a></li>
+                <li><a href="/About/Contact_Card.aspx">Contact Cards</a></li>
+                <li><a href="/About/Membership.aspx" class="has-submenu" id="sm-14756718904763403-3" aria-haspopup="true" aria-controls="sm-14756718904763403-4" aria-expanded="false"><span class="sub-arrow fa fa-angle-down"></span>Membership</a>
+                <ul id="sm-14756718904763403-4" role="group" aria-hidden="true" aria-labelledby="sm-14756718904763403-3" aria-expanded="false">
+                <li><a href="/About/Membership/Membership_Form.aspx">Membership Form</a></li>
+                </ul>
+                </li>
+                <li><a href="/About/Gallery.aspx">Gallery</a></li>
+                <li><a href="/About/Gallery2.aspx">Gallery2</a></li>
+                </ul>
+                </li>
+                <li><a href="/Golf.aspx" class="has-submenu" id="sm-14756718904763403-5" aria-haspopup="true" aria-controls="sm-14756718904763403-6" aria-expanded="false"><span class="sub-arrow fa fa-angle-down"></span>Golf</a>
+                <ul id="sm-14756718904763403-6" role="group" aria-hidden="true" aria-labelledby="sm-14756718904763403-5" aria-expanded="false">
+                <li><a href="/Golf/Responsive_Scorecard.aspx">Mystic River Scorecard</a></li>
+                <li><a href="/TeeTimes.aspx">Tee Times</a></li>
+                <li><a href="/EventManagement/EventCalendar.aspx?Mode=advance&amp;Criteria=&amp;categories=All%2C16225&amp;locations=All%2C16840%2C16842%2C16836%2C16841%2C16839%2C16837%2C16838&amp;options=fullevents&amp;modules=&amp;guests=nopref&amp;gender=nopref&amp;birthdays=hide">Golf Calendar</a></li>
+                </ul>
+                </li>
+                <li><a href="/Dining_Events.aspx" class="has-submenu" id="sm-14756718904763403-7" aria-haspopup="true" aria-controls="sm-14756718904763403-8" aria-expanded="false"><span class="sub-arrow fa fa-angle-down"></span>Dining</a>
+                <ul id="sm-14756718904763403-8" role="group" aria-hidden="true" aria-labelledby="sm-14756718904763403-7" aria-expanded="false">
+                <li><a href="/Dining_Events/Menu.aspx">Menu</a></li>
+                </ul>
+                </li>
+                <li><a href="/Amenities.aspx" class="has-submenu" id="sm-14756718904763403-9" aria-haspopup="true" aria-controls="sm-14756718904763403-10" aria-expanded="false"><span class="sub-arrow fa fa-angle-down"></span>Amenities</a>
+                <ul id="sm-14756718904763403-10" role="group" aria-hidden="true" aria-labelledby="sm-14756718904763403-9" aria-expanded="false">
+                <li><a href="/Amenities/Clubhouse.aspx">Clubhouse</a></li>
+                <li><a href="/Amenities/Aquatics.aspx">Aquatics</a></li>
+                <li><a href="/Amenities/Fitness.aspx" class="has-submenu" id="sm-14756718904763403-11" aria-haspopup="true" aria-controls="sm-14756718904763403-12" aria-expanded="false"><span class="sub-arrow fa fa-angle-down"></span>Fitness</a>
+                <ul id="sm-14756718904763403-12" role="group" aria-hidden="true" aria-labelledby="sm-14756718904763403-11" aria-expanded="false">
+                <li><a href="http://e3demo.clubhouseonline-e3.com/EventManagement/EventCalendar.aspx?Mode=advance&amp;Criteria=&amp;categories=All%2C22886&amp;locations=All%2C16840%2C16842%2C16836%2C16841%2C16839%2C16837%2C16838&amp;options=fullevents&amp;modules=&amp;guests=nopref&amp;gender=nopref&amp;birthdays=hide">Fitness Calendar</a></li>
+                </ul>
+                </li>
+                <li><a href="/Amenities/Tennis.aspx">Tennis</a></li>
+                </ul>
+                </li>
+                <li><a href="/Real_Estate.aspx">Real Estate</a></li>
+                <li><a href="/Login.aspx">Login</a></li>
+            </ul>
+        </nav>
+        </div>
+
+        <script language="javascript">
+            window.$chosmartmenujsurl = '/CMSPages/GetResource.ashx?scriptfile=~/CMSScripts/Custom/jquery_smartmenus.js';
+            window.$chojquerycorejsurl = '/CMSPages/GetResource.ashx?scriptfile=~/CMSScripts/jquery/jquery-core.js';
+
+            var a = document.getElementById('menuElem');
+            a.id = 'main-menu';
+            document.getElementById('divMainMenu').style.display = 'block';
+            a.className = 'sm sm-blue  collapsed';
+        </script>
+        </div>
+    </header>
+    <div class="banner">
+        <img id="p_lt_Banner_EditableImage_ucEditableImage_imgImage" src="img/Banner-About.jpg" alt="">
+    </div> 
+    <section class="page-content" id="page-content">
+    	<div class="container">
+            <style>.DesignMode .appendDiv{display:block !important;}</style>
+            <div class="e3pagetemplate">
+                <div class="e3page-main col-xs-12">
+
+
+<!--***************************************************************
+
+CONTENT AREA START
+
+*****************************************************************-->
+
+<p>ENTER YOUR CONTENT HERE</p>
+
+
+<!--***************************************************************
+
+CONTENT AREA END
+
+*****************************************************************-->
+
+            </div>
+            <div class="appendDiv col-xs-12" style="display:none;">
+                <h1>About</h1></div>
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <div class="footer-top">
+        <div class="container">
+        <div class="row">
+        <div class="col-xs-12 col-sm-3 footer-logo"><img alt="" src="img/logo-w.png"></div>
+        <div class="col-xs-12 col-sm-6 footer-contact">
+        <h4>Address</h4>
+        <i class="fa fa-map-marker">&nbsp;</i> Mystic River Country Club 1825 Lightwood Rd Huntington, ON L1R 3G1
+
+        <h4>Contact</h4>
+        <i class="fa fa-phone">&nbsp;</i> (132) 123&ndash;1235 &nbsp;<i class="fa fa-fax">&nbsp;</i> (132) 123&ndash;1235 <i class="fa fa-email">&nbsp;&nbsp;</i> contact@mysticrivercc.com</div>
+        <div class="col-xs-12 col-sm-3 footer-social"><i class="fa fa-facebook">&nbsp;</i> <i class="fa fa-twitter">&nbsp;</i> <i class="fa fa-linkedin">&nbsp;</i></div>
+        </div>
+        </div>
+        </div>
+        <div class="footer-bot">
+        <div class="container">
+        <div class="copyr">&copy; Mystic River Country Club 2016. All Rights Reserved</div>
+        <div class="poweredby">
+        <a class="poweredbylink" target="_blank" href="http://www.jonasclub.com">Powered by Jonas Club Software</a></div>
+        </div>
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>
