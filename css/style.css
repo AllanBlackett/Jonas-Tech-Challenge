@@ -1751,6 +1751,14 @@ footer .poweredby {
 
 /* ----- ADD YOUR STYLES BELOW ----- */
 
+img {
+	margin: 0 auto;
+}
+
+.hh-container {
+	margin: 0 auto;
+	width: 70%;
+}
 
 .paragraph1	{
 	text-align: center;
@@ -1765,12 +1773,41 @@ footer .poweredby {
 	font-style: normal;
 }
 
-
-
-
-.hh_container {
-	border: black solid 1px;
-	max-width: 800px; 
-	margin: 0 auto;
+.heading2 {
+	color: goldenrod;
+	font-family: 'Times New Roman', Times, serif;
+	font-weight: lighter;
+	text-align: center;
+	font-style: normal;
 }
 
+.tagline {
+	background-color: lightgreen;
+	
+}
+
+.tagline-text {
+font-family: 'Times New Roman', Times, serif;	
+color: #fff;
+	text-align: center;
+	font-size: x-large;
+padding: 20% 2%;
+	line-height: 50px;
+}
+
+/* Responsive Media Queries */
+@media screen and (max-width: 1025px) {
+	.hh-container {
+		margin: 0 auto;
+		width: 100%;
+	}	
+	.tagline {
+		margin-top: 5px;
+
+	}
+	.tagline-text {
+		padding: 2%;
+			line-height: 40px;
+			font-size: large;
+		}
+}
